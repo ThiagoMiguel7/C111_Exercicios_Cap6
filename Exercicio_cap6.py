@@ -30,7 +30,7 @@ print(f"Número de Empresas espaciais da China é {num_chinaCompany}.")
 # Exércicio 2
 print('\033[1m' + 'Exercício 2' + '\033[0m')
 
-paises = pd.read_csv("paises.csv", delimiter=";")
+paises = pd.read_csv("paises.csv", delimiter=";", dtype=str, encoding="utf-8")
 
 north = paises[paises['Region'].str.contains('NORTHERN AMERICA')]
 
